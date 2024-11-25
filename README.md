@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=ecafc1&height=200&section=header&text=Rung2ne&fontColor=ffffff&fontSize=60&fontAlignY=30)
+![header](https://capsule-render.vercel.app/api?type=waving&color=ecafc1&height=200&section=header&text=Banana0907&fontColor=ffffff&fontSize=60&fontAlignY=30)
 
 - 👋 Hi, I’m @Rung2ne
 - 👀 I’m interested in ...

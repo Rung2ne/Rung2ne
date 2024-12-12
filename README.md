@@ -4,6 +4,8 @@
   <h2>
     <a href="https://pypi.org/user/drkostas/">
     <img src="https://komarev.com/ghpvc/?username=Rung2ne&label=Visitors&color=0e75b6&style=flat" alt="googoldkhan" />
+    <a href="https://wakatime.com/@013488f9-bc76-4cde-8c69-9de0410473d4">
+    <img src="https://wakatime.com/badge/user/013488f9-bc76-4cde-8c69-9de0410473d4.svg" alt="Total time coded since Nov 19 2024" />
   </h2>
 </div>
 

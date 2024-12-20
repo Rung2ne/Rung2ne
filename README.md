@@ -33,10 +33,8 @@
 
 # Language
 > ## Language I can
->> ### 언어 문법
 >> [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 >>
->> ### 마크업 문법
 >> [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3.org/)
 >> ******&******
 >> [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
@@ -49,3 +47,6 @@
 >> [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://ecma-international.org/publications-and-standards/standards/ecma-262/)
 >> ******&******
 >> [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+
+> [Discord Bot codes](https://github.com/Rung2ne/Rung2ne/blob/main/discord%20bot%20codes.md)

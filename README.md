@@ -49,4 +49,13 @@
 >> [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 
+<div align="center">
+  <h2>
+    <a href="https://wakatime.com">
+					<img src="https://wakatime.com/share/@Rung2ne/b5d3b09c-9476-4c6a-a99a-c2f4e1c5dc3e.png" width="620px" />
+				</a>
+  </h2>
+</div>
+
+
 > [Discord Bot codes](https://github.com/Rung2ne/Rung2ne/blob/main/discord%20bot%20codes.md)

@@ -23,3 +23,26 @@
 				</a>
   </h2>
 </div>
+
+
+ETC
+
+> [!WARNING]  
+> a
+
+> [!NOTE]  
+> a
+
+[![dev chat](https://discordapp.com/api/guilds/1343245698996375652/widget.png?style=shield)](https://discord.gg/discord)
+
+![2025](https://img.shields.io/badge/2025-43B02A?style=for-the-badge&logo=2025&logoColor=white)
+![2026](https://img.shields.io/badge/2026-43B02A?style=for-the-badge&logo=2026&logoColor=white)<br/>
+![Environment](https://img.shields.io/badge/ENV-ff0000?style=for-the-badge&logo=ENV&logoColor=white)
+![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0079d5.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Roblox Studio](https://img.shields.io/badge/Roblox%20Studio-%230a0b0b.svg?style=for-the-badge&logo=Roblox%20Studio&logoColor=white)<br/>
+![Language](https://img.shields.io/badge/LAN-ff0000?style=for-the-badge&logo=LAN&logoColor=white)
+![Python](https://img.shields.io/badge/python-0079d5?style=for-the-badge&logo=python&logoColor=ffdd54)![uv](https://img.shields.io/badge/uv-%230079d5.svg?style=for-the-badge&logo=uv&logoColor=white)
+![Luau](https://img.shields.io/badge/luau-%232C2D72.svg?style=for-the-badge&logo=luau&logoColor=white)<br/>
+![Package](https://img.shields.io/badge/PKG-ff0000?style=for-the-badge&logo=PKG&logoColor=white) ![None](https://img.shields.io/badge/None-000000?style=for-the-badge&logo=None&logoColor=white)<br/>
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z11XE7EJ)

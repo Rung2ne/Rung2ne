@@ -30,14 +30,7 @@
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Rung2ne&theme=merko&hide_border=true&background=000000&ring=667eea&fire=764ba2&currStreakLabel=667eea)
 
-![Snake Animation](https://raw.githubusercontent.com/Rung2ne/ContributionSnake/output/github-contribution-grid-snake-dark.svg)
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rung2ne/ContributionSnake/output/github-contribution-grid-snake.gif">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rung2ne/ContributionSnake/output/github-contribution-grid-snake-light.gif">
-  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Rung2ne/ContributionSnake/output/github-contribution-grid-snake-light.gif">
-</picture>
-
-</div>
+![Snake Animation](https://raw.githubusercontent.com/Rung2ne/ContributionSnake/output/github-contribution-grid-snake-dark.gif)
 
 
 ---

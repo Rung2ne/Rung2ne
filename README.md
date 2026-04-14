@@ -81,9 +81,9 @@
       <td width="53%" align="left" valign="top">
         <img src="https://img.shields.io/badge/Desktop-Main%20System-667eea?style=for-the-badge&logo=desktop&logoColor=white" />
         <br>
-        <img src="https://img.shields.io/badge/CPU-i5--12400-blue?style=for-the-badge&logo=intel&logoColor=white" />
+        <img src="https://img.shields.io/badge/CPU-i5--13400F-blue?style=for-the-badge&logo=intel&logoColor=white" />
         <br>
-        <img src="https://img.shields.io/badge/GPU-RTX%203060%20Ti-green?style=for-the-badge&logo=nvidia&logoColor=white" />
+        <img src="https://img.shields.io/badge/GPU-RTX%203060%20Ventus%202X%2012GB-green?style=for-the-badge&logo=nvidia&logoColor=white" />
         <br>
         <img src="https://img.shields.io/badge/RAM-16GB-orange?style=for-the-badge&logo=ram&logoColor=white" />
         <br>
@@ -94,7 +94,7 @@
         <br>
         <img src="https://img.shields.io/badge/CPU-Pentium%20Gold%206500Y-blue?style=for-the-badge&logo=intel&logoColor=white" />
         <br>
-        <img src="https://img.shields.io/badge/GPU-Intel%20UHD%20615-white?style=for-the-badge&logo=intel&logoColor=blue" />
+        <img src="https://img.shields.io/badge/GPU-Intel%20UHD%20615-white?style=for-the-badge&logo=intel&logoColor=white" />
         <br>
         <img src="https://img.shields.io/badge/RAM-4GB-orange?style=for-the-badge&logo=ram&logoColor=white" />
         <br>
@@ -104,7 +104,7 @@
   </table>
 </div>
 <br />
-
+<sub>Yes, that Dodge Ram logo is a little easter egg for you. 🐏</sub>
 
 
 

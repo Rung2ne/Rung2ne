@@ -7,7 +7,11 @@
   </h2>
 </div>
 
-
+<p align="center">
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=313566tgzuhcxxzkj6evccnurmra&redirect=true">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313566tgzuhcxxzkj6evccnurmra&cover_image=true&theme=spotify-embed&show_offline=false&background_color=000000&interchange=true&profanity=true&mode=dark&bar_color=53b14f&bar_color_cover=true">
+  </a>
+</p>
 
 
 

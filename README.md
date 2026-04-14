@@ -52,24 +52,20 @@
   <img src="https://img.shields.io/badge/python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white" />
   <img src="https://img.shields.io/badge/luau-%232C2D72.svg?style=for-the-badge&logo=luau&logoColor=white" />
-</p>
-<p align="center">
+  <br>
   <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" />
-</p>
-<p align="center">
+  <br>
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" />
-</p>
-<p align="center">
+  <br>
   <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" />
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
   <img src="https://img.shields.io/badge/Antigravity-000000?style=for-the-badge&logo=HBuilderX&logoColor=white" />
   <img src="https://img.shields.io/badge/HBuilderX-42b983?style=for-the-badge&logo=HBuilderX&logoColor=white" />
-</p>
-<p align="center">
+  <br>
   <img src="https://img.shields.io/badge/Roblox%20Studio-%230a0b0b.svg?style=for-the-badge&logo=Roblox%20Studio&logoColor=white" />
   <img src="https://img.shields.io/badge/Scratch-4D97FF?style=for-the-badge&logo=scratch&logoColor=white" />
 </p>
@@ -80,11 +76,11 @@
 
 <div align="center">
   <h2>💻 My Workspace</h2>
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <table border="0" cellpadding="0" cellspacing="0" width="110%">
     <tr>
-      <td width="40%" align="left" valign="top">
+      <td width="53%" align="left" valign="top">
         <img src="https://img.shields.io/badge/Desktop-Main%20System-667eea?style=for-the-badge&logo=desktop&logoColor=white" />
-        <br><br>
+        <br>
         <img src="https://img.shields.io/badge/CPU-i5--12400-blue?style=for-the-badge&logo=intel&logoColor=white" />
         <br>
         <img src="https://img.shields.io/badge/GPU-RTX%203060%20Ti-green?style=for-the-badge&logo=nvidia&logoColor=white" />
@@ -93,9 +89,9 @@
         <br>
         <img src="https://img.shields.io/badge/OS-Windows%2011-0078D4?style=for-the-badge&logo=windows-11&logoColor=white" />
       </td>
-      <td width="60%" align="left" valign="top">
+      <td width="57%" align="left" valign="top">
         <img src="https://img.shields.io/badge/Laptop-Sub%20System-764ba2?style=for-the-badge&logo=laptop&logoColor=white" />
-        <br><br>
+        <br>
         <img src="https://img.shields.io/badge/CPU-Pentium%20Gold%206500Y-blue?style=for-the-badge&logo=intel&logoColor=white" />
         <br>
         <img src="https://img.shields.io/badge/GPU-Intel%20UHD%20615-white?style=for-the-badge&logo=intel&logoColor=blue" />

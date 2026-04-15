@@ -77,7 +77,7 @@
 
 <h2>💻 My Workspace</h2>
 <div align="center">
-  <table border="0" cellpadding="0" cellspacing="0" width="110%">
+  <table border="0" cellpadding="0" cellspacing="0" width="120%">
     <tr>
       <td width="53%" align="left" valign="top">
         <img src="https://img.shields.io/badge/Desktop-Main%20System-667eea?style=for-the-badge&logo=desktop&logoColor=white" />
@@ -90,7 +90,7 @@
         <br>
         <img src="https://img.shields.io/badge/OS-Windows%2011-0078D4?style=for-the-badge&logo=windows-11&logoColor=white" />
       </td>
-      <td width="57%" align="left" valign="top">
+      <td width="67%" align="left" valign="top">
         <img src="https://img.shields.io/badge/Laptop-Sub%20System-764ba2?style=for-the-badge&logo=laptop&logoColor=white" />
         <br>
         <img src="https://img.shields.io/badge/CPU-Pentium%20Gold%206500Y-blue?style=for-the-badge&logo=intel&logoColor=white" />

@@ -1,3 +1,4 @@
+<table width="100%">
 <table>
 <tr>
 <th width="50%">1번</th>

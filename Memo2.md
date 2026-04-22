@@ -13,8 +13,12 @@ print("helloworld")
 </td>
 <td valign="top">
     
-```python
-print("helloworld")
+```lua
+--[[Muffins variables]]
+      
+local CurrKickdown = 0
+local LaunchBuild = 0
+local Rev = script.Parent.Values.RPM
 ```
     
 </td>

@@ -50,8 +50,8 @@
 <table width="100%">
 <table>
 <tr>
-<th width="50%">1번</th>
-<th width="50%">2번</th>
+<th width="50%">머핀 변수가 없는 경우</th>
+<th width="50%">머핀 변수가 있는 경우</th>
 </tr>
 <tr>
 <td valign="top">

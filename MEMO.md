@@ -15,6 +15,8 @@ PR은 Collaborators Only
 Settings > Actions > General > Approval for running fork pull request workflows from contributors<br>
 Require approval for all external contributors
 
+Settings > Moderation > Interaction limits
+Limit to collaborators only
 
 https://learn.microsoft.com/api/achievements/share/en-us/Yoguter12-8622/WVHA6LBN?sharingId=5BFF1ECC6F91A840
 

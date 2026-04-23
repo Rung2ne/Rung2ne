@@ -7,6 +7,12 @@
   </h2>
 </div>
 
+
+git commit -m "Update README" -m "Co-authored-by: pymood1 <pymood1@users.noreply.github.com>"
+
+
+
+
 리포 메인 페이지에서 오른쪽 위에 About 설정
 
 Settings > General > Features<br>
@@ -17,6 +23,13 @@ Require approval for all external contributors
 
 Settings > Moderation > Interaction limits
 Limit to collaborators only
+
+
+
+
+
+
+
 
 https://learn.microsoft.com/api/achievements/share/en-us/Yoguter12-8622/WVHA6LBN?sharingId=5BFF1ECC6F91A840
 

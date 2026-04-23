@@ -7,6 +7,14 @@
   </h2>
 </div>
 
+리포 메인 페이지에서 오른쪽 위에 About 설정
+
+Settings > General > Features<br>
+PR은 Collaborators Only
+
+Settings > Actions > General > Approval for running fork pull request workflows from contributors<br>
+Require approval for all external contributors
+
 
 https://learn.microsoft.com/api/achievements/share/en-us/Yoguter12-8622/WVHA6LBN?sharingId=5BFF1ECC6F91A840
 

@@ -42,6 +42,10 @@ https://learn.microsoft.com/api/achievements/share/en-us/Yoguter12-8622/WVHA6LBN
 
 [![dev chat](https://discordapp.com/api/guilds/1343245698996375652/widget.png?style=shield)](https://discord.gg/discord)
 
+
+![MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)
+![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)<br/>
+
 ![2024](https://img.shields.io/badge/2024-43B02A?style=for-the-badge&logo=2024&logoColor=white)
 ![2025](https://img.shields.io/badge/2025-FFA500?style=for-the-badge&logo=2025&logoColor=white)
 ![2026](https://img.shields.io/badge/2026-8A2BE2?style=for-the-badge&logo=2026&logoColor=white)<br/>

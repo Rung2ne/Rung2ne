@@ -8,6 +8,8 @@
   </h2>
 </div>
 
+[![Visitors](https://myhits.vercel.app/api/hit/https%3A%2F%2Fgithub.com%2FRung2ne?color=green&label=Visitors&size=small&base_count=864)](https://myhits.vercel.app)
+
 <p align="center">
   <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=313566tgzuhcxxzkj6evccnurmra&redirect=true">
     <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313566tgzuhcxxzkj6evccnurmra&cover_image=true&theme=spotify-embed&show_offline=false&background_color=000000&interchange=true&profanity=true&mode=dark&bar_color=53b14f&bar_color_cover=true">

@@ -73,6 +73,12 @@ https://learn.microsoft.com/api/achievements/share/en-us/Yoguter12-8622/WVHA6LBN
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![None](https://img.shields.io/badge/None-000000?style=for-the-badge&logo=None&logoColor=white)<br/>
 
+![Deployment](https://img.shields.io/badge/Deploy-ff0000?style=for-the-badge&logo=PKG&logoColor=white)
+![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z11XE7EJ)
 
 

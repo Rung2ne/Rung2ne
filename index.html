@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rung2ne Profile</title>
+  <style>
+    :root {
+      --primary: #06b6d4;
+      --bg-glass: rgba(15, 23, 42, 0.82);
+      --border-glass: rgba(255, 255, 255, 0.15);
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-hover: rgba(255, 255, 255, 0.1);
+      --text-main: #f8fafc;
+      --text-sub: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text-main);
+      background: linear-gradient(180deg, #fde047 0%, #38bdf8 50%, #22d3ee 100%);
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px 20px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 880px;
+      background: var(--bg-glass);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-glass);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .bgm-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(34, 211, 238, 0.5);
+      color: #ffffff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      cursor: pointer;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bgm-btn:hover {
+      transform: translateY(-3px);
+      background: rgba(15, 23, 42, 0.9);
+      border-color: #22d3ee;
+      box-shadow: 0 12px 30px rgba(34, 211, 238, 0.4);
+    }
+
+    .bgm-btn.playing {
+      background: rgba(239, 68, 68, 0.3);
+      border-color: rgba(239, 68, 68, 0.6);
+    }
+
+    .bgm-btn.playing:hover {
+      background: rgba(239, 68, 68, 0.5);
+      border-color: #ef4444;
+      box-shadow: 0 12px 30px rgba(239, 68, 68, 0.4);
+    }
+
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      object-fit: cover;
+      box-shadow: 0 0 30px rgba(34, 211, 238, 0.4);
+    }
+
+    .status-badge {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      background: #10b981;
+      border: 3px solid #0f172a;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+    .profile-name {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff 30%, #67e8f9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .profile-bio {
+      color: var(--text-sub);
+      font-size: 1rem;
+    }
+
+    .visitor-badge {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #a5f3fc;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.3px;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .social-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glass);
+      padding: 16px 20px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      text-decoration: none;
+      color: var(--text-main);
+      transition: all 0.25s ease;
+    }
+
+    .social-card:hover {
+      background: var(--card-hover);
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .social-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-icon img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .social-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social-label {
+      font-size: 0.75rem;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .social-value {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-top: 2px;
+    }
+
+    .tech-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tech-pill {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-glass);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      transition: all 0.2s ease;
+    }
+
+    .tech-pill img {
+      width: 16px;
+      height: 16px;
+    }
+
+    .tech-pill:hover {
+      background: rgba(34, 211, 238, 0.15);
+      border-color: rgba(34, 211, 238, 0.4);
+      color: #ffffff;
+    }
+
+    .github-stats-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .stats-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .stats-grid img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .streak-wrapper img, .snake-wrapper img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .workspace-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .spec-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glass);
+      padding: 22px;
+      border-radius: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .spec-card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #67e8f9;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .spec-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .spec-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .spec-key {
+      color: var(--text-sub);
+    }
+
+    .spec-value {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glass);
+      padding: 20px;
+      border-radius: 18px;
+      text-decoration: none;
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 15px;
+      transition: all 0.25s ease;
+    }
+
+    .project-card:hover {
+      background: var(--card-hover);
+      transform: translateY(-3px);
+      border-color: rgba(34, 211, 238, 0.4);
+    }
+
+    .project-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .project-desc {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      line-height: 1.4;
+    }
+
+    .project-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .project-tag {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(34, 211, 238, 0.15);
+      color: #67e8f9;
+    }
+
+    #player-wrapper {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="bgm-btn" id="bgmToggle" onclick="toggleBGM()">
+    <span id="bgmIcon">▶️</span>
+  </button>
+
+  <div id="player-wrapper">
+    <div id="youtube-player"></div>
+  </div>
+
+  <div class="container">
+
+    <div class="profile-header">
+      <div class="avatar-wrapper">
+        <img class="avatar" src="https://media.discordapp.net/attachments/1426780478408757278/1509841052968685628/image0.jpg?ex=6abad2ce&is=6ab9814e&hm=e21aa8496b0635b52ad8f596b93b184e0ccf2776e746ecee4cf99dfaa9a62290&=&format=webp" alt="Rung2ne Avatar" />
+        <div class="status-badge" title="Online"></div>
+      </div>
+      <div>
+        <h1 class="profile-name">Rung2ne</h1>
+        <p class="profile-bio">Developer & Creator</p>
+        
+        <div class="visitor-badge">
+          <a href="https://myhits.vercel.app" target="_blank">
+            <img src="https://myhits.vercel.app/api/hit/https%3A%2F%2Frung2ne.github.io%2FRung2ne?color=green&label=Visitors&size=small" alt="Visitors" style="border-radius: 4px;"/>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <section>
+      <h2 class="section-title">💬 Connect</h2>
+      <div class="social-grid">
+        <div class="social-card">
+          <div class="social-icon">
+            <img src="https://cdn.simpleicons.org/discord/ffffff" alt="Discord">
+          </div>
+          <div class="social-info">
+            <span class="social-label">Main Discord</span>
+            <span class="social-value">@rung2ne</span>
+          </div>
+        </div>
+
+        <div class="social-card">
+          <div class="social-icon">
+            <img src="https://cdn.simpleicons.org/discord/ffffff" alt="Discord">
+          </div>
+          <div class="social-info">
+            <span class="social-label">Sub Discord</span>
+            <span class="social-value">@yoguter12</span>
+          </div>
+        </div>
+
+        <a href="https://www.roblox.com/users/1450740554/profile" target="_blank" class="social-card">
+          <div class="social-icon">
+            <img src="https://cdn.simpleicons.org/roblox/ffffff" alt="Roblox">
+          </div>
+          <div class="social-info">
+            <span class="social-label">Roblox Profile</span>
+            <span class="social-value">@Runga3203</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">🎵 Currently Listening or Recently Listened</h2>
+      <div style="width: 100%; display: flex; justify-content: center;">
+        <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=313566tgzuhcxxzkj6evccnurmra&redirect=true" target="_blank">
+          <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313566tgzuhcxxzkj6evccnurmra&cover_image=true&theme=spotify-embed&show_offline=false&background_color=000000&interchange=true&profanity=true&mode=dark&bar_color=22d3ee&bar_color_cover=true" style="border-radius: 12px; max-width: 100%;">
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">📊 GitHub Activity</h2>
+      <div class="github-stats-container">
+        
+        <div class="stats-grid">
+          <img height="180em" src="https://github-readme-stats-chi-ten-31.vercel.app/api?username=Rung2ne&show_icons=true&theme=merko&rank_icon=github&hide_border=true&bg_color=00000000&title_color=667eea&icon_color=764ba2&text_color=ffffff" alt="GitHub Stats" />
+          <img height="180em" src="https://github-readme-stats-chi-ten-31.vercel.app/api/top-langs/?username=Rung2ne&layout=compact&theme=merko&hide_border=true&bg_color=00000000&title_color=667eea&text_color=ffffff" alt="Top Languages" />
+        </div>
+
+        <div class="streak-wrapper">
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=Rung2ne&theme=merko&hide_border=true&background=00000000&ring=667eea&fire=764ba2&currStreakLabel=667eea" alt="GitHub Streak" />
+        </div>
+
+        <div class="snake-wrapper">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rung2ne/ContributionSnake/output/github-contribution-grid-snake.gif">
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rung2ne/ContributionSnake/output/github-contribution-grid-snake-light.gif">
+            <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Rung2ne/ContributionSnake/output/github-contribution-grid-snake-light.gif">
+          </picture>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+
+      <h2 class="section-title">🛠️ Tech Stack</h2>
+      <div class="tech-group">
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"> Python</span>
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/lua/2C2D72" alt="Lua"> Lua</span>
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/roblox/000000" alt="Luau"> Luau</span>
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/c/A8B9CC" alt="C"> C</span>
+      </div>
+      <div class="tech-group" style="margin-top: 10px;">
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5"> HTML5</span>
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3"> CSS3</span>
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"> JavaScript</span>
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/markdown/ffffff" alt="Markdown"> Markdown</span>
+      </div>
+      <div class="tech-group" style="margin-top: 10px;">
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="VS Code"> VS Code</span>
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/scratch/855CD6" alt="Scratch"> Scratch</span>
+      </div>
+      <div class="tech-group" style="margin-top: 10px;">
+        <span class="tech-pill"><img src="https://cdn.simpleicons.org/robloxstudio/00A2FF" alt="Roblox Studio"> Roblox Studio</span>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">📘 Featured Projects</h2>
+      <div class="projects-grid">
+        <a class="project-card" href="https://github.com/Rung2ne/Rung2ne" target="_blank">
+          <div>
+            <div class="project-title">🍓 Rung2ne</div>
+            <p class="project-desc" style="margin-top: 8px;">Because GitHub profile READMEs are way too restrictive. Built my own web-based profile space simply because I wanted to flex my own styling, not GitHub's.</p>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Me</span>
+            <span class="project-tag">Strawberry addict</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Rung2ne/A-Chassis-Realistic-Manual" target="_blank">
+          <div>
+            <div class="project-title">🚗 A-Chassis Realistic Manual</div>
+            <p class="project-desc" style="margin-top: 8px;">A realistic manual transmission mode for Roblox A-Chassis. Unlike the boring stock version, this actually punishes you for bad driving—your engine will stall if revs drop too low in-gear without the clutch.</p>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Luau</span>
+            <span class="project-tag">Roblox</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Rung2ne/ClassCard_Helper" target="_blank">
+          <div>
+            <div class="project-title">📚 ClassCard Helper</div>
+            <p class="project-desc" style="margin-top: 8px;">The ultimate ClassCard automation tool. Created because we literally have no choice but to do it for school, targeting the #1 app most Korean students secretly hate.</p>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Chromium</span>
+            <span class="project-tag">Korean students hate this</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Rung2ne/203" target="_blank">
+          <div>
+            <div class="project-title">🚍 Project 203</div>
+            <p class="project-desc" style="margin-top: 8px;">I will write this soon</p>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Tailwind CSS</span>
+            <span class="project-tag">NEXT</span>
+            <span class="project-tag">Bus Geek</span>
+            <span class="project-tag">203</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Rung2ne/Rung2ne" target="_blank">
+          <div>
+            <div class="project-title">Nothing Yet</div>
+            <p class="project-desc" style="margin-top: 8px;">This is just a PlaceHolder</p>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">PlaceHolder</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">💻 Workspace Specs</h2>
+      <div class="workspace-grid">
+        <div class="spec-card">
+          <div class="spec-card-title">🖥️ Main System</div>
+          <div class="spec-item"><span class="spec-key">CPU</span><span class="spec-value">i5-13400F</span></div>
+          <div class="spec-item"><span class="spec-key">GPU</span><span class="spec-value">RTX 3060 12GB</span></div>
+          <div class="spec-item"><span class="spec-key">RAM</span><span class="spec-value">16GB</span></div>
+          <div class="spec-item"><span class="spec-key">OS</span><span class="spec-value">Windows 11</span></div>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-card-title">💻 Sub Laptop</div>
+          <div class="spec-item"><span class="spec-key">CPU</span><span class="spec-value">Pentium 6500Y</span></div>
+          <div class="spec-item"><span class="spec-key">GPU</span><span class="spec-value">Intel UHD 615</span></div>
+          <div class="spec-item"><span class="spec-key">RAM</span><span class="spec-value">4GB</span></div>
+          <div class="spec-item"><span class="spec-key">OS</span><span class="spec-value">Windows 11</span></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    var isPlaying = false;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('youtube-player', {
+        height: '0',
+        width: '0',
+        videoId: 'wgawG1gffXU',
+        playerVars: {
+          'autoplay': 1,
+          'controls': 0,
+          'loop': 1,
+          'playlist': 'wgawG1gffXU',
+          'origin': window.location.origin
+        },
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      event.target.mute();
+      event.target.playVideo();
+
+      const startAudioOnInteraction = () => {
+        if (!isPlaying && player && typeof player.unMute === 'function') {
+          player.unMute();
+          player.setVolume(50);
+          player.playVideo();
+          updateBGMUI(true);
+
+          window.removeEventListener('click', startAudioOnInteraction);
+          window.removeEventListener('touchstart', startAudioOnInteraction);
+          window.removeEventListener('keydown', startAudioOnInteraction);
+        }
+      };
+
+      window.addEventListener('click', startAudioOnInteraction);
+      window.addEventListener('touchstart', startAudioOnInteraction);
+      window.addEventListener('keydown', startAudioOnInteraction);
+    }
+
+    function toggleBGM() {
+      if (!player || typeof player.pauseVideo !== 'function') return;
+
+      if (isPlaying) {
+        player.pauseVideo();
+        updateBGMUI(false);
+      } else {
+        player.unMute();
+        player.setVolume(50);
+        player.playVideo();
+        updateBGMUI(true);
+      }
+    }
+
+    function updateBGMUI(playing) {
+      isPlaying = playing;
+      const btn = document.getElementById('bgmToggle');
+      const iconSpan = document.getElementById('bgmIcon');
+
+      if (playing) {
+        iconSpan.innerText = "⏸️";
+        btn.classList.add('playing');
+      } else {
+        iconSpan.innerText = "▶️";
+        btn.classList.remove('playing');
+      }
+    }
+  </script>
+</body>
+</html>

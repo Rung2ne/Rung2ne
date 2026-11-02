@@ -71,6 +71,8 @@ https://learn.microsoft.com/api/achievements/share/en-us/Yoguter12-8622/WVHA6LBN
 ![Next JS](https://img.shields.io/badge/Next-black.svg?style=for-the-badge&logo=next.js&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F.svg?style=for-the-badge&logo=node.js&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+![Ffmpeg](https://img.shields.io/badge/ffmpeg-%23007808.svg?style=for-the-badge&logo=ffmpeg&logoColor=white)
 ![None](https://img.shields.io/badge/None-000000?style=for-the-badge&logo=None&logoColor=white)<br/>
 
 ![Deployment](https://img.shields.io/badge/Deploy-ff0000?style=for-the-badge&logo=PKG&logoColor=white)
